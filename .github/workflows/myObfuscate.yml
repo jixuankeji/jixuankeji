@@ -1,4 +1,4 @@
-name: Build Obfuscate BPB Panel
+name: Build myObfuscate BPB Panel
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
         run: |
           wget -O origin.js https://raw.githubusercontent.com/bia-pain-bache/BPB-Worker-Panel/refs/heads/main/build/unobfuscated-worker.js
 
-      - name: Obfuscate BPB worker js
+      - name: myObfuscate BPB worker js
         run: |
           javascript-obfuscator origin.js --output _worker.js \
           --compact true \
